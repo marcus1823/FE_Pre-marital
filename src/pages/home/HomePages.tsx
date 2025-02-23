@@ -1,7 +1,5 @@
-import Header from '../../components/Header'
-import Banner from '../../components/Banner'
+import Banner from '../../components/common/home/Banner'
 import ReadCard from '../../components/common/home/ReadCard'
-import Footer from '../../components/Footer'
 import PopularCard from '../../components/common/home/PopularCard'
 import SectionCard from '../../components/common/home/SectionCard'
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
@@ -18,8 +16,8 @@ const therapists = [
 
 function HomePages() {
     return (
-        <div className='bg-[#F5F3EA]'>
-            <Header />
+        <div className='bg-[#F5F3EA] pb-20'>
+            {/* <Header /> */}
             <Banner />
             <div className="flex flex-col justify-center items-center min-h-screen bg-green-900 text-white text-center px-4">
                 {/* Chữ trên cùng */}
@@ -107,9 +105,8 @@ function HomePages() {
                 </div>
             </div>
 
-            <div className='m-20'></div>
 
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }
