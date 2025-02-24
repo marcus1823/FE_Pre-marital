@@ -42,7 +42,7 @@ const AppRoutes: React.FC = () => (
         <Route
           path="/home"
           element={
-            <PrivateRoute element={HomePages} allowedRoles={["EXPERT"]} />
+            <PrivateRoute element={HomePages} allowedRoles={["THERAPIST"]} />
           }
         />
       </Route>

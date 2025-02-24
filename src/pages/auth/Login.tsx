@@ -27,7 +27,7 @@ const Login = () => {
 
       switch (user.roleName) {
         case "MEMBER":
-        case "EXPERT":
+        case "THERAPIST":
           navigate("/home");
           break;
         case "ADMIN":
