@@ -7,12 +7,15 @@ import {
 } from "react-router-dom";
 import LayoutLogin from "../layouts/LayoutLogin";
 import LayoutMain from "../layouts/LayoutMain";
+import LayoutTherapist from "../layouts/LayoutTherapist";
 import Login from "../pages/auth/Login";
 import PrivateRoute from "./PriveRouter";
 import HomePages from "../pages/home/HomePages";
 import Quizzes from "../pages/home/Quizzes/Quizzes";
 import Dashboard from "../pages/admin/Dashboard";
 import Counseling from "../pages/Counseling";
+import CalendarAppointment from "../pages/therapist/CalendarAppointment";
+import DashboardTP from "../pages/therapist/DashboardTP";
 const AppRoutes: React.FC = () => (
   <Router>
     <Routes>
@@ -38,11 +41,20 @@ const AppRoutes: React.FC = () => (
       </Route>
 
       {/* NHÀ Trị Liệu */}
-      <Route element={<LayoutMain />}>
+      <Route element={<LayoutTherapist />}>
         <Route
-          path="/home"
+          path="/calendar-appointment"
           element={
-            <PrivateRoute element={HomePages} allowedRoles={["THERAPIST"]} />
+            <PrivateRoute
+              element={CalendarAppointment}
+              allowedRoles={["THERAPIST"]}
+            />
+          }
+        />
+        <Route
+          path="/dashboardTP"
+          element={
+            <PrivateRoute element={DashboardTP} allowedRoles={["THERAPIST"]} />
           }
         />
       </Route>

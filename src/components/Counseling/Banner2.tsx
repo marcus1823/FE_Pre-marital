@@ -12,12 +12,12 @@ export default function Banner2() {
 
       <div
         className="absolute inset-0"
-        style={{ backgroundColor: "rgba(0, 0, 0, 0.4)" }}
+        style={{ backgroundColor: "rgba(0, 0, 0, 0.45)" }}
       ></div>
 
       <div className="relative z-10 w-full flex flex-col items-center justify-center">
         {/* Tiêu đề */}
-        <h1 className="text-white mt-4 text-3xl font-bold pb-2">
+        <h1 className="text-white mt-4 text-2xl font-bold ">
           Tìm kiếm nhà trị liệu
         </h1>
         <p className="text-white mt-2 text-lg text-center font-medium px-4 max-w-xl pb-6">

@@ -4,7 +4,7 @@ import { FcGoogle } from "react-icons/fc";
 
 const mockUsers = [
   { email: "admin", password: "123", roleName: "ADMIN" },
-  { email: "expert", password: "123", roleName: "EXPERT" },
+  { email: "tl", password: "123", roleName: "THERAPIST" },
   { email: "user", password: "123", roleName: "MEMBER" },
 ];
 
@@ -28,7 +28,7 @@ const Login = () => {
       switch (user.roleName) {
         case "MEMBER":
         case "THERAPIST":
-          navigate("/home");
+          navigate("/calendar-appointment");
           break;
         case "ADMIN":
           navigate("/dashboard");
